@@ -1,0 +1,566 @@
+/* about main */
+.about-fon {
+  background: url(./img/about\ fon.png);
+  background-size: 100%;
+  width: 100%;
+  height: 600px;
+}
+
+/* who-are-we */
+
+.who-block {
+  margin-top: 160px;
+  margin-bottom: 100px;
+  padding: 10px 30px;
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 1200px;
+  height: 251px;
+  background: #ffbeb7;
+  border-radius: 50px;
+}
+.who-block .who-block-two {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  padding: 10px;
+  position: absolute;
+  top: 100px;
+  left: 0px;
+  width: 693px;
+  height: 179px;
+  background: #ff9286;
+  border-radius: 10px;
+}
+.who-block .about-img-block {
+  position: absolute;
+  top: 0px;
+  right: 100px;
+  width: 350px;
+
+  border-radius: 10px;
+}
+.about-block-title {
+  font-weight: 800;
+  font-size: 70px;
+  line-height: 85px;
+
+  color: #ff3e00;
+}
+strong {
+  color: #ff3e00;
+  font-weight: 900;
+}
+.p-who-are-we {
+  font-size: 16px;
+  color: #ffffff;
+}
+.shusi-img-line {
+  width: 100%;
+}
+/* order section */
+.order {
+  margin-top: -200px;
+  margin-bottom: 100px;
+}
+.about-title-block {
+  display: flex;
+  justify-content: flex-end;
+}
+.order-block {
+  width: 100%;
+  height: 296px;
+
+  background: #ffbeb7;
+  border-radius: 50px;
+}
+.order-block-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.order-block-text {
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+  gap: 20px;
+  scrollbar-color: #ff3e00;
+}
+.blockk {
+  height: 500px;
+  width: 100%;
+}
+/* about */
+.about-us {
+  position: relative;
+  margin-bottom: 250px;
+  height: 100%;
+  width: 100%;
+}
+.about-us .about-us-content {
+  position: relative;
+  top: 50px;
+  width: 600px;
+}
+.about-us .about-fon {
+  position: absolute;
+  top: 100px;
+  left: -100px;
+  width: 1040px;
+  height: 627px;
+  background: #ffbeb7;
+  border-radius: 50px;
+}
+.about-us-wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+.about-us .roll-img {
+  position: absolute;
+  top: 220px;
+  right: 60px;
+  width: 550px;
+  transform: rotate(-50deg);
+}
+.about-us-title {
+  font-weight: 800;
+  font-size: 40px;
+  color: #ff3e00;
+}
+/* adaptiv */
+
+@media (max-width: 1300px) {
+  /* about main */
+  .about-fon {
+    background: url(./img/about\ fon.png);
+    background-size: 100%;
+    width: 100%;
+    height: 500px;
+  }
+
+  /* who-are-we */
+
+  .who-block {
+    margin-top: 160px;
+    margin-bottom: 100px;
+    padding: 10px 10px;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 251px;
+    background: #ffbeb7;
+    border-radius: 50px;
+  }
+  .who-block .who-block-two {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    width: 693px;
+    height: 179px;
+    background: #ff9286;
+    border-radius: 10px;
+  }
+  .who-block .about-img-block {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    width: 350px;
+
+    border-radius: 10px;
+  }
+  .about-block-title {
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 85px;
+
+    color: #ff3e00;
+  }
+  strong {
+    color: #ff3e00;
+    font-weight: 900;
+  }
+}
+@media (max-width: 1200px) {
+  /* who-are-we */
+
+  .who-block {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 10px 10px;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 251px;
+    background: #ffbeb7;
+    border-radius: 50px;
+  }
+  .who-block .who-block-two {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    width: 530px;
+    height: 179px;
+    background: #ff9286;
+    border-radius: 10px;
+  }
+  .who-block .about-img-block {
+    position: absolute;
+    top: 0px;
+    right: 10px;
+    width: 350px;
+
+    border-radius: 10px;
+  }
+  .about-block-title {
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 85px;
+
+    color: #ff3e00;
+  }
+  strong {
+    color: #ff3e00;
+    font-weight: 900;
+  }
+}
+@media (max-width: 1100px) {
+  /* about main */
+  .about-fon {
+    background: url(./img/about\ fon.png);
+    background-size: 100%;
+    width: 100%;
+    height: 400px;
+  }
+  /* about us block */
+  .about-us .about-fon {
+    position: absolute;
+    top: 100px;
+    left: -100px;
+    width: 1040px;
+    height: 627px;
+    background: #ffbeb7;
+    border-radius: 50px;
+  }
+  .about-us-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .about-us .roll-img {
+    position: absolute;
+    top: 300px;
+    right: 60px;
+    width: 450px;
+    transform: rotate(-50deg);
+  }
+}
+@media (max-width: 1000px) {
+  /* who-are-we */
+
+  .who-block {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 10px 10px;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 251px;
+    background: #ffbeb7;
+    border-radius: 50px;
+  }
+  .who-block .who-block-two {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    width: 430px;
+    height: 179px;
+    background: #ff9286;
+    border-radius: 10px;
+  }
+  .who-block .about-img-block {
+    position: absolute;
+    top: 20px;
+    right: 10px;
+    width: 300px;
+
+    border-radius: 10px;
+  }
+  .about-block-title {
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 85px;
+
+    color: #ff3e00;
+  }
+  strong {
+    color: #ff3e00;
+    font-weight: 900;
+  }
+  /* about us block */
+  .about-us .about-fon {
+    position: absolute;
+    top: 100px;
+    left: -100px;
+    width: 700px;
+    height: 627px;
+    background: #ffbeb7;
+    border-radius: 50px;
+  }
+  .about-us-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .about-us .roll-img {
+    position: absolute;
+    top: 400px;
+    right: 0px;
+    width: 450px;
+    transform: rotate(-50deg);
+  }
+  .about-us .about-us-content {
+    position: relative;
+    top: 50px;
+    width: 400px;
+  }
+}
+
+@media (max-width: 1000px) {
+  /* who-are-we */
+
+  .who-block {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 10px 10px;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 251px;
+    background: #ffbeb7;
+    border-radius: 50px;
+  }
+  .who-block .who-block-two {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    width: 430px;
+    height: 179px;
+    background: #ff9286;
+    border-radius: 10px;
+  }
+  .who-block .about-img-block {
+    position: absolute;
+    top: 20px;
+    right: 0;
+    width: 300px;
+
+    border-radius: 10px;
+  }
+  .about-block-title {
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 85px;
+
+    color: #ff3e00;
+  }
+  strong {
+    color: #ff3e00;
+    font-weight: 900;
+  }
+}
+@media (max-width: 900px) {
+  /* about main */
+  .about-fon {
+    background: url(./img/about\ fon.png);
+    background-size: 100%;
+    width: 100%;
+    height: 300px;
+  }
+  .shusi-img-line {
+    width: 100%;
+    display: none;
+  }
+  /* order section */
+  .order {
+    margin-top: -50px;
+    margin-bottom: 100px;
+  }
+}
+
+@media (max-width: 800px) {
+  /* who-are-we */
+
+  .who-block {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 10px 10px;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 251px;
+    background: #ffbeb7;
+    border-radius: 50px;
+  }
+  .who-block .who-block-two {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    width: 100%;
+    height: 179px;
+    background: #ff9286;
+    border-radius: 10px;
+  }
+  .who-block .about-img-block {
+    position: absolute;
+    top: 200px;
+    right: 10px;
+    width: 200px;
+
+    border-radius: 10px;
+  }
+  .about-block-title {
+    font-weight: 800;
+    font-size: 70px;
+    line-height: 85px;
+
+    color: #ff3e00;
+  }
+  strong {
+    color: #ff3e00;
+    font-weight: 900;
+  }
+
+  /* about us block */
+  .about-us .about-fon {
+    position: absolute;
+    top: 150 px;
+    left: 0;
+    width: 100%;
+    height: 627px;
+    background: #ffbeb7;
+    border-radius: 50px;
+  }
+  .about-us-wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+  .about-us .roll-img {
+    display: none;
+    position: absolute;
+    top: 400px;
+    right: 0px;
+    width: 450px;
+    transform: rotate(-50deg);
+  }
+  .about-us .about-us-content {
+    position: relative;
+    top: 50px;
+    width: 400px;
+  }
+}
+@media (max-width: 700px) {
+  /* about main */
+  .about-fon {
+    background: url(./img/about\ fon.png);
+    background-size: 100%;
+    width: 100%;
+    height: 230px;
+  }
+}
+@media (max-width: 600px) {
+  /* who-are-we */
+  .who-wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  .who-block {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 10px 10px;
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 251px;
+    background: #ffbeb7;
+    border-radius: 50px;
+  }
+  .who-block .who-block-two {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 0px;
+    position: absolute;
+    top: 100px;
+    left: 0px;
+    width: 100%;
+    height: 179px;
+    background: #ff9286;
+    border-radius: 10px;
+  }
+  .who-block .about-img-block {
+    position: absolute;
+    top: 200px;
+    right: 10px;
+    width: 200px;
+    display: none;
+    border-radius: 10px;
+  }
+  .about-block-title {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 85px;
+
+    color: #ff3e00;
+  }
+  strong {
+    color: #ff3e00;
+    font-weight: 900;
+  }
+  .p-who-are-we {
+    font-size: 13px;
+    color: #ffffff;
+  }
+}
+@media (max-width: 500px) {
+  /* about main */
+  .about-fon {
+    background: url(./img/about\ fon.png);
+    background-size: 100%;
+    width: 100%;
+    height: 180px;
+  }
+}
+@media (max-width: 400px) {
+  /* about main */
+  .about-fon {
+    background: url(./img/about\ fon.png);
+    background-size: 100%;
+    width: 100%;
+    height: 150px;
+  }
+}
