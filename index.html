@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./adaptiv.css" />
+    <link rel="stylesheet" href="./basket.css" />
 
     <link
       rel="stylesheet"
@@ -29,6 +30,33 @@
     <!-- preloader -->
     <!--  header-->
     <section class="header">
+      <!-- basket -->
+      <div class="basket-fon">
+        <div class="basket-sell">
+          <div class="basket-dody">
+            <div class="basket-head">
+              <h2 class="basket-title">Ваше замовлення</h2>
+              <div id="close" class="basket-close-block">
+                <div class="basket-elips">
+                  <img src="./img/close.png" alt="" class="basket-close" />
+                </div>
+              </div>
+            </div>
+            <div class="basket-cards-container">
+              <!-- cards -->
+              <div class="basket-cards"></div>
+            </div>
+            <div class="centre">
+              <div class="all">Всього: 0 грн</div>
+            </div>
+
+            <div class="centre">
+              <button class="basket-btn">Замовити</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- basket -->
       <header>
         <!-- burger -->
 
@@ -147,6 +175,7 @@
                   src="./img/shopping-basket.png"
                   alt=""
                 />
+                <div class="elips-basket"></div>
               </div>
             </div>
           </div>
@@ -537,8 +566,11 @@
     </section>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-  <script src="./burger.js"></script>
+  <script src="./js/burger.js"></script>
   <script src="./preloader.js"></script>
+  <script src="./js/basket.js"></script>
+  <script src="./js/counter.js"></script>
+  <script src="./js/card-01.js"></script>
   <script>
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 4,

@@ -11,6 +11,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
     />
+    <link rel="stylesheet" href="./basket.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -29,14 +30,73 @@
     <title>ShushiBam</title>
   </head>
   <body>
-        <!-- preloader -->
+    <!-- preloader -->
 
-        <div id="page-preloader" class="preloader">
-          <div class="loader"></div>
-        </div>
-        <!-- preloader -->
+    <div id="page-preloader" class="preloader">
+      <div class="loader"></div>
+    </div>
+    <!-- preloader -->
     <!--  header-->
     <section class="header">
+      <!-- basket -->
+      <div class="basket-fon">
+        <div class="basket-sell">
+          <div class="basket-dody">
+            <div class="basket-head">
+              <h2 class="basket-title">Ваше замовлення</h2>
+              <div id="close" class="basket-close-block">
+                <div class="basket-elips">
+                  <img src="./img/close.png" alt="" class="basket-close" />
+                </div>
+              </div>
+            </div>
+            <div class="basket-cards-container">
+              <!-- cards -->
+              <div class="basket-cards">
+                <!-- 1 -->
+                <!-- <div class="basket-card">
+                  <div class="card">
+                    <div class="upper-card">
+                      <div class="card-img-block">
+                        <img src="./img/roll.png" alt="" class="card-img" />
+                      </div>
+                    </div>
+                    <div class="card-content">
+                      <div class="centre">
+                        <h3 class="card-title">Lorem ipsum</h3>
+                      </div>
+                      <div class="card-info-container">
+                        <div class="card-info">
+                          <p class="p-card">250₴</p>
+                          <p class="p-card">300грм</p>
+                        </div>
+                      </div>
+
+                      <div class="centre">
+                        <div class="counter-block">
+                          <div data-action="minus" class="counter">-</div>
+                          <div data-counter class="counter">1</div>
+                          <div data-action="plus" class="counter">+</div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div> -->
+              </div>
+            </div>
+            <div class="centre">
+              <div class="all">
+                Всього: <span class="tottal-prise">0</span> грн
+              </div>
+            </div>
+
+            <div class="centre">
+              <button class="basket-btn">Замовити</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- basket -->
       <header>
         <!-- burger -->
 
@@ -44,7 +104,9 @@
           <nav class="nav-burger-menu">
             <ul>
               <li>
-                <a class="burger-link" id="home-btn" href="./about.html">Про нас</a>
+                <a class="burger-link" id="home-btn" href="./about.html"
+                  >Про нас</a
+                >
               </li>
 
               <li>
@@ -147,6 +209,8 @@
 
               <div class="basket">
                 <p class="p-basket">Кошик</p>
+
+                <div class="basket-elips-block"></div>
                 <img
                   class="basket-img"
                   src="./img/shopping-basket.png"
@@ -298,6 +362,7 @@
           </a>
         </div>
       </div>
+    </section>
     <!-- name block -->
     <section class="name-block">
       <div class="name-block-container">
@@ -319,10 +384,10 @@
             <!-- cards -->
             <div class="roll-cards">
               <!-- card  -->
-              <div class="card">
+              <div class="card" data-id="roll">
                 <div class="upper-card">
                   <div class="card-img-block">
-                    <img src="./img/set.png" alt="" class="card-img set" />
+                    <img src="./img/set.png" alt="" class="set card-img" />
                   </div>
                 </div>
                 <div class="card-content">
@@ -330,12 +395,14 @@
                     <h3 class="card-title">Lorem ipsum</h3>
                   </div>
                   <div class="card-info">
-                    <p class="p-card">250₴</p>
-                    <p class="p-card">300грм</p>
+                    <p class="p-card prise">750₴</p>
+                    <p class="p-card weight">1000грм</p>
                     <img
+                      data-card="btn"
+                      type="button"
                       src="./img/basket-card.png"
                       alt=""
-                      class="basket-card"
+                      class="basket-card-img"
                     />
                   </div>
                   <div class="centre">
@@ -349,10 +416,10 @@
                 </div>
               </div>
               <!-- card  -->
-              <div class="card">
+              <div class="card" data-id="roll">
                 <div class="upper-card">
                   <div class="card-img-block">
-                    <img src="./img/set.png" alt="" class="card-img set" />
+                    <img src="./img/set.png" alt="" class="set card-img" />
                   </div>
                 </div>
                 <div class="card-content">
@@ -360,12 +427,14 @@
                     <h3 class="card-title">Lorem ipsum</h3>
                   </div>
                   <div class="card-info">
-                    <p class="p-card">250₴</p>
-                    <p class="p-card">300грм</p>
+                    <p class="p-card prise">750₴</p>
+                    <p class="p-card weight">1000грм</p>
                     <img
+                      data-card="btn"
+                      type="button"
                       src="./img/basket-card.png"
                       alt=""
-                      class="basket-card"
+                      class="basket-card-img"
                     />
                   </div>
                   <div class="centre">
@@ -379,10 +448,10 @@
                 </div>
               </div>
               <!-- card  -->
-              <div class="card">
+              <div class="card" data-id="roll">
                 <div class="upper-card">
                   <div class="card-img-block">
-                    <img src="./img/set.png" alt="" class="card-img set" />
+                    <img src="./img/set.png" alt="" class="set card-img" />
                   </div>
                 </div>
                 <div class="card-content">
@@ -390,12 +459,14 @@
                     <h3 class="card-title">Lorem ipsum</h3>
                   </div>
                   <div class="card-info">
-                    <p class="p-card">250₴</p>
-                    <p class="p-card">300грм</p>
+                    <p class="p-card prise">750₴</p>
+                    <p class="p-card weight">1000грм</p>
                     <img
+                      data-card="btn"
+                      type="button"
                       src="./img/basket-card.png"
                       alt=""
-                      class="basket-card"
+                      class="basket-card-img"
                     />
                   </div>
                   <div class="centre">
@@ -408,12 +479,11 @@
                   </div>
                 </div>
               </div>
-
               <!-- card  -->
-              <div class="card">
+              <div class="card" data-id="roll">
                 <div class="upper-card">
                   <div class="card-img-block">
-                    <img src="./img/set.png" alt="" class="card-img set" />
+                    <img src="./img/set.png" alt="" class="set card-img" />
                   </div>
                 </div>
                 <div class="card-content">
@@ -421,16 +491,18 @@
                     <h3 class="card-title">Lorem ipsum</h3>
                   </div>
                   <div class="card-info">
-                    <p class="p-card">250₴</p>
-                    <p class="p-card">300грм</p>
+                    <p class="p-card prise">750₴</p>
+                    <p class="p-card weight">1000грм</p>
                     <img
+                      data-card="btn"
+                      type="button"
                       src="./img/basket-card.png"
                       alt=""
-                      class="basket-card"
+                      class="basket-card-img"
                     />
                   </div>
                   <div class="centre">
-                    <button data-action="open" id="#btn" class="card-btn set">
+                    <button data-action="open" id="#btn" class="card-btn">
                       Склад
                     </button>
                   </div>
@@ -440,10 +512,10 @@
                 </div>
               </div>
               <!-- card  -->
-              <div class="card">
+              <div class="card" data-id="roll">
                 <div class="upper-card">
                   <div class="card-img-block">
-                    <img src="./img/set.png" alt="" class="card-img set" />
+                    <img src="./img/set.png" alt="" class="set card-img" />
                   </div>
                 </div>
                 <div class="card-content">
@@ -451,16 +523,18 @@
                     <h3 class="card-title">Lorem ipsum</h3>
                   </div>
                   <div class="card-info">
-                    <p class="p-card">250₴</p>
-                    <p class="p-card">300грм</p>
+                    <p class="p-card prise">750₴</p>
+                    <p class="p-card weight">1000грм</p>
                     <img
+                      data-card="btn"
+                      type="button"
                       src="./img/basket-card.png"
                       alt=""
-                      class="basket-card"
+                      class="basket-card-img"
                     />
                   </div>
                   <div class="centre">
-                    <button data-action="open" id="#btn" class="card-btn set">
+                    <button data-action="open" id="#btn" class="card-btn">
                       Склад
                     </button>
                   </div>
@@ -470,10 +544,10 @@
                 </div>
               </div>
               <!-- card  -->
-              <div class="card">
+              <div class="card" data-id="roll">
                 <div class="upper-card">
                   <div class="card-img-block">
-                    <img src="./img/set.png" alt="" class="card-img set" />
+                    <img src="./img/set.png" alt="" class="set card-img" />
                   </div>
                 </div>
                 <div class="card-content">
@@ -481,16 +555,18 @@
                     <h3 class="card-title">Lorem ipsum</h3>
                   </div>
                   <div class="card-info">
-                    <p class="p-card">250₴</p>
-                    <p class="p-card">300грм</p>
+                    <p class="p-card prise">750₴</p>
+                    <p class="p-card weight">1000грм</p>
                     <img
+                      data-card="btn"
+                      type="button"
                       src="./img/basket-card.png"
                       alt=""
-                      class="basket-card"
+                      class="basket-card-img"
                     />
                   </div>
                   <div class="centre">
-                    <button data-action="open" id="#btn" class="card-btn set">
+                    <button data-action="open" id="#btn" class="card-btn">
                       Склад
                     </button>
                   </div>
@@ -502,13 +578,15 @@
             </div>
           </div>
           <div class="centre">
-            <button id="help" class="help">Як замовити ?</button>
+            <a href="/about.html#order">
+              <button class="help">Як замовити ?</button>
+            </a>
           </div>
         </div>
       </div>
     </section>
     <!-- footer -->
-    <section class="footer">
+    <section id="help" class="footer">
       <div class="fon-footer">
         <div class="container">
           <div class="footer-content-block">
@@ -626,9 +704,15 @@
     </section>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-  <script src="./burger.js"></script>
-  <script src="./loadmore.js"></script>
+  <script src="./js/caic.js"></script>
+  <script src="./js/burger.js"></script>
+  <script src="./js/loadmore.js"></script>
   <script src="./preloader.js"></script>
+  <script src="./js/card-02.js"></script>
+  <script src="./js/basket.js"></script>
+  <script src="./js/counter.js"></script>
+  <script src="./js/elips.js"></script>
+
   <script>
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 4,

@@ -27,6 +27,14 @@
   width: 370px;
 }
 /* roll section */
+.basket-card-img {
+  cursor: pointer;
+  width: 60px;
+  transition: 0.3s all;
+}
+.basket-card-img:active {
+  transform: scale(1.1);
+}
 .roll {
   background: #ffffff;
   width: 100%;
@@ -260,6 +268,10 @@
     height: 10px;
     width: 100%;
   }
+  .basket-card-img {
+    width: 60px;
+  }
+
   .name-card {
     padding: 30px 40px 30px 50px;
     width: 240px;

@@ -1,0 +1,435 @@
+.basket-fon {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.295);
+  position: fixed;
+  display: none;
+  top: 0;
+  left: 0;
+  z-index: 80;
+  transition: 0.3s all;
+}
+.basket-fon.active {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.295);
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 80;
+}
+.basket-sell {
+  transition: 0.3s all;
+  width: 460px;
+  background-color: #ffff;
+  position: relative;
+  top: 0;
+  border-radius: 20px;
+  left: 1000px;
+}
+.basket-dody {
+  padding: 50px;
+}
+.basket-head {
+  display: flex;
+  justify-content: space-between;
+}
+.basket-close-block {
+  cursor: pointer;
+}
+.basket-elips {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  transition: 0.3s all;
+  border-radius: 50%;
+}
+.basket-elips:hover {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px;
+  height: 50px;
+  background-color: #ffbeb7;
+  border-radius: 50%;
+}
+
+/* card */
+
+.card {
+  top: 200px;
+  width: 300px;
+  margin-bottom: 200px;
+  position: relative;
+  background: #ff3e00;
+  border-radius: 10px;
+  filter: drop-shadow(0px 8px 4px rgba(0, 0, 0, 0.25));
+}
+.card .upper-card {
+  position: absolute;
+  top: -150px;
+  left: 0;
+  background: #ffbeb7;
+  width: 100%;
+  height: 160px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.card-hidden {
+  transform: scaleY(0);
+  text-align: center;
+  padding: 20px 0px;
+  margin-top: -20px;
+  width: 100%;
+  height: 70px;
+  background: #ff3e00;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: #ffffff;
+  font-weight: 500;
+}
+.new {
+  transform: scaleY(1);
+  text-align: center;
+
+  transition: 0.1s;
+  padding: 20px 0px;
+  margin-top: -20px;
+  width: 100%;
+  height: 70px;
+  background: #ff3e00;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.upper-card .card-img-block {
+  display: flex;
+  justify-content: center;
+}
+.upper-card .card-img-block .card-img {
+  position: absolute;
+  top: 0;
+  width: 300px;
+}
+
+.set {
+  margin-top: -50px;
+}
+
+.card .card-content {
+  padding: 20px 0px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.card-info {
+  padding: 0px 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.card-content .card-info .basket-card {
+  cursor: pointer;
+}
+.card-content .card-btn {
+  position: relative;
+  bottom: 5px;
+  width: 90px;
+  height: 25px;
+  border: none;
+  color: #ff3e00;
+  font-weight: 600;
+  background: #ffffff;
+  border-radius: 5px;
+}
+.card-content .card-title {
+  font-size: 20px;
+  color: #ffffff;
+}
+.card-info .p-card {
+  font-weight: 900px;
+  font-size: 16px;
+  color: #ffffff;
+}
+.prise {
+  font-weight: 900px;
+  font-size: 16px;
+  color: #ffffff;
+}
+.counter-block {
+  display: flex;
+}
+
+.counter {
+  width: 40px;
+  font-size: 20px;
+  font-weight: 900;
+  height: 30px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-right: 5px;
+  cursor: pointer;
+}
+.basket-cards-container {
+  display: flex;
+  justify-content: center;
+  max-height: 400px;
+  overflow-y: scroll;
+}
+.all {
+  font-size: 20px;
+  font-weight: 600;
+  margin-top: 20px;
+}
+.basket-btn {
+  margin-top: 30px;
+  width: 100%;
+  height: 50px;
+  background-color: #ff3e00;
+  border: none;
+  color: #ffffff;
+  font-weight: 900;
+  font-size: 20px;
+  border-radius: 20px;
+}
+
+@media (max-width: 1400px) {
+  .basket-sell {
+    width: 460px;
+    background-color: #ffff;
+    position: relative;
+    top: 0;
+    left: 800px;
+  }
+}
+@media (max-width: 1300px) {
+  .basket-sell {
+    width: 460px;
+    background-color: #ffff;
+    position: relative;
+    top: 0;
+    left: 750px;
+  }
+}
+
+@media (max-width: 1200px) {
+  .basket-sell {
+    width: 460px;
+    background-color: #ffff;
+    position: relative;
+    top: 0;
+    left: 650px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .basket-sell {
+    width: 460px;
+    background-color: #ffff;
+    position: relative;
+    top: 0;
+    left: 550px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .basket-sell {
+    width: 460px;
+    background-color: #ffff;
+    position: relative;
+    top: 0;
+    left: 450px;
+  }
+}
+
+@media (max-width: 900px) {
+  .basket-sell {
+    width: 460px;
+    background-color: #ffff;
+    position: relative;
+    top: 0;
+    left: 350px;
+  }
+}
+
+@media (max-width: 800px) {
+  .basket-sell {
+    width: 460px;
+    background-color: #ffff;
+    position: relative;
+    top: 0;
+    left: 250px;
+  }
+}
+
+@media (max-width: 700px) {
+  .basket-sell {
+    width: 460px;
+    background-color: #ffff;
+    position: relative;
+    top: 0;
+    left: 150px;
+  }
+}
+
+@media (max-width: 600px) {
+  .basket-sell {
+    width: 460px;
+    background-color: #ffff;
+    position: relative;
+    top: 0;
+    left: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .basket-sell {
+    width: 100%;
+    background-color: #ffff;
+    position: relative;
+    top: 0;
+    left: 0;
+  }
+
+  .basket-dody {
+    padding: 20px;
+  }
+  .basket-head {
+    display: flex;
+    justify-content: space-between;
+  }
+  .basket-close-block {
+    cursor: pointer;
+  }
+  .basket-elips {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    transition: 0.3s all;
+    border-radius: 50%;
+  }
+  .basket-elips:hover {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50px;
+    height: 50px;
+    background-color: #ffbeb7;
+    border-radius: 50%;
+  }
+
+  /* card */
+
+  .card {
+    top: 200px;
+    width: 100%;
+    margin-bottom: 200px;
+    position: relative;
+    background: #ff3e00;
+    border-radius: 10px;
+    filter: drop-shadow(0px 8px 4px rgba(0, 0, 0, 0.25));
+  }
+  .card .upper-card {
+    position: absolute;
+    top: -100px;
+    left: 0;
+    background: #ffbeb7;
+    width: 100%;
+    height: 100px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+
+  .upper-card .card-img-block {
+    display: flex;
+    justify-content: center;
+  }
+  .upper-card .card-img-block .card-img {
+    position: absolute;
+    top: 0;
+    width: 200px;
+  }
+
+  .card .card-content {
+    padding: 20px 0px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+  }
+
+  .card-content .card-info .basket-card {
+    cursor: pointer;
+  }
+  .basket-card-img {
+    width: 30px;
+  }
+  .card-content .card-btn {
+    position: relative;
+    bottom: 5px;
+    width: 90px;
+    height: 25px;
+    border: none;
+    color: #ff3e00;
+    font-weight: 600;
+    background: #ffffff;
+    border-radius: 5px;
+  }
+  .card-content .card-title {
+    font-size: 20px;
+    color: #ffffff;
+  }
+  .card-info .p-card {
+    font-weight: 900px;
+    font-size: 16px;
+    color: #ffffff;
+  }
+  .counter-block {
+    display: flex;
+  }
+
+  .counter {
+    width: 40px;
+    font-size: 20px;
+    font-weight: 900;
+    height: 30px;
+    background-color: #ffffff;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  .basket-cards-container {
+    display: flex;
+    justify-content: center;
+    max-height: 400px;
+    overflow-y: scroll;
+  }
+  .all {
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 20px;
+  }
+  .basket-btn {
+    margin-top: 30px;
+    width: 100%;
+    height: 50px;
+    background-color: #ff3e00;
+    border: none;
+    color: #ffffff;
+    font-weight: 900;
+    font-size: 20px;
+    border-radius: 20px;
+  }
+}
