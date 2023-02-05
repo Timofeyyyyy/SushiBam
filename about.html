@@ -5,6 +5,7 @@
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="./about.css" />
     <link rel="stylesheet" href="./adaptiv.css" />
+    <link rel="stylesheet" href="./basket.css" />
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
@@ -36,6 +37,38 @@
     <!-- preloader -->
     <!--  header-->
     <section class="header">
+      <!-- basket -->
+      <div class="basket-fon">
+        <div class="basket-sell">
+          <div class="basket-dody">
+            <div class="basket-head">
+              <h2 class="basket-title">Ваше замовлення</h2>
+              <div id="close" class="basket-close-block">
+                <div class="basket-elips">
+                  <img src="./img/close.png" alt="" class="basket-close" />
+                </div>
+              </div>
+            </div>
+            <div class="basket-cards-container">
+              <!-- cards -->
+              <div class="basket-cards">
+                <!-- 1 -->
+              </div>
+            </div>
+            <div class="centre">
+              <div class="all">
+                Всього: <span class="tottal-prise">0</span> грн
+              </div>
+            </div>
+
+            <div class="centre">
+              <button class="basket-btn">Замовити</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- basket -->
+
       <header>
         <!-- burger -->
 
@@ -538,8 +571,15 @@
     </section>
   </body>
   <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-  <script src="./burger.js"></script>
+  <script src="./js/caic.js"></script>
+  <script src="./js/burger.js"></script>
+  <script src="./js/loadmore.js"></script>
   <script src="./preloader.js"></script>
+  <script src="./js/card-02.js"></script>
+  <script src="./js/basket.js"></script>
+  <script src="./js/counter.js"></script>
+  <script src="./js/elips.js"></script>
+
   <script>
     var swiper = new Swiper(".mySwiper", {
       slidesPerView: 4,
