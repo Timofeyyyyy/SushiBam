@@ -311,12 +311,11 @@ nav {
   justify-content: center;
   align-items: center;
   background-color: #ffffff;
+  height: 50px;
   width: 100%;
-  height: 130px;
 }
 .navigation-wrapper {
   display: flex;
-  margin-top: 80px;
 }
 /* nav card */
 .navigation-card {

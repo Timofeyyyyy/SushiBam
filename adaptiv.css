@@ -825,6 +825,10 @@
   .navigation-hiden {
     display: block;
   }
+  .navigation-wrapper {
+    display: flex;
+    margin-top: 80px;
+  }
   .navigation {
     display: none;
   }

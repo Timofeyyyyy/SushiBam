@@ -1,4 +1,14 @@
 /* name block */
+.navigation {
+  padding: 10px 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  height: 50px;
+  width: 100%;
+  margin-top: 90px;
+}
 .name-block {
   padding: 100px 0px 300px 0px;
   margin-bottom: 100px;
